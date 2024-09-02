@@ -23,3 +23,11 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+
+ cds compile srv/ --to xsuaa > xs-security.json
+
+ cf create-service xsuaa application MyHANAApp-auth -c xs-security.json
+
+cf create-service-key MyHANAApp-auth default  
+
